@@ -1,0 +1,122 @@
+.box {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+    to right top,
+    #2543f3,
+    #285af6,
+    #386ef5,
+    #4e81f3,
+    #6592ef,
+    #5ea2f4,
+    #5fb1f7,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .login {
+    width: fit-content;
+    min-height: 85vh;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: Black;
+    padding: 3rem;
+    h2 {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    .user-box {
+      margin-top: 1.2rem;
+      width: 100%;
+      display: flex;
+      align-items: stretch;
+      flex-direction: column;
+      border-bottom: 1px solid black;
+      p {
+        text-transform: uppercase;
+        padding-bottom: 0.3rem;
+      }
+      input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: black;
+        padding: 0.3rem;
+        font-size: 1.2rem;
+      }
+    }
+    .fbr {
+      width: 100%;
+      margin-top: 0.5rem;
+      text-align: right;
+    }
+    button {
+      width: 100%;
+      padding: 9px 0;
+      background-image: linear-gradient(
+        to right top,
+        #d16ba5,
+        #c777b9,
+        #ba83ca,
+        #aa8fd8,
+        #9a9ae1,
+        #8aa7ec,
+        #79b3f4,
+        #69bff8,
+        #52cffe,
+        #41dfff,
+        #46eefa,
+        #5ffbf1
+      );
+      margin-top: 1rem;
+      border-radius: 12px;
+    }
+    > p {
+      margin-top: 3rem;
+    }
+    .link-box {
+      margin-top: 1.5rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      > a {
+        padding: 21px;
+        border-radius: 50%;
+        color: white;
+        background-color: black;
+        font-size: larger;
+        transition: all 0.3s;
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+    > a {
+      margin-top: 0.3rem;
+      text-decoration: underline;
+    }
+  }
+}
+@media screen and (max-width: 600) {
+  .login {
+    width: 100%;
+    padding: 0;
+  }
+}

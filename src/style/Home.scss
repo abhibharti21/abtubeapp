@@ -1,0 +1,13 @@
+#img {
+  animation: imgUp 2s linear infinite alternate;
+}
+
+@keyframes imgUp {
+  to {
+    transform: translatey(-18px);
+  }
+}
+#vs2::-webkit-scrollbar,
+#vs::-webkit-scrollbar {
+  display: none;
+}
